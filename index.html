@@ -371,8 +371,7 @@
     <div class="container">
         <header>
             <div class="logo">
-                <svg class="recycle-icon" viewBox="0 0 24 24">
-                   <img src="images/trashcan2.jpg" alt="Trashcan 2" class="rounded-lg shadow hover:shadow-xl transition" />
+                <img src="images/trashcan2.jpg" alt="Trashcan 2" class="rounded-lg shadow hover:shadow-xl transition" />
                 </svg>
                
             </div>
@@ -406,6 +405,12 @@
                     <h3>🎯 Find Nearest Bin</h3>
                     <p style="margin: 15px 0;">Locate recycling bins and waste collection points in your area</p>
                     <button class="btn btn-secondary">📍 Open Map</button>
+                    <script>
+  document.getElementById('openMapBtn').addEventListener('click', () => {
+    const url = 'https://www.google.com/maps/place/Kathu,+South+Africa';
+    window.open(url, '_blank');
+  });
+</script>
                     
                     <div style="margin-top: 30px;">
                         <h4>Community Progress</h4>
